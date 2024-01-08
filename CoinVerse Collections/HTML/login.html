@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+   <link rel="stylesheet" href="../css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/style2.css">
+
+  <title>login</title>
+</head>
+
+<body>
+    <nav class="site-nav">
+        <div class="row align-items-center">
+  
+          <div class="col-6 col-sm-6 col-lg-3">
+            <h1><a href="index.html">CoinVerse  <span class="text-primary">collections</span> </h1>
+            </div>
+  
+            <div class="col-6 col-sm-6 col-lg-9 site-navigation text-right">
+              <ul class="js-clone-nav d-none d-lg-inline-block text-left site-menu">
+                <li><a href="index.html">Home</a></li>
+                <li class="has-children">
+                  <a href="#">Movies</a>
+                  <ul class="dropdown">
+                    <li><a href="elements.html">Drama</a></li>
+                    <li><a href="#">Cartoon</a></li>
+                    <li class="has-children">
+                      <a href="#">Korean Movies</a>
+                      <ul class="dropdown">
+                        <li><a href="#">Comedy</a></li>
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Romantic</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="#">Fantasy</a></li>
+                  </ul>
+                </li>
+                <li><a href="coins.html">Coins</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+                <li class="cta-button"><a href="login.html" target="_blank">Login</a></li>
+                <li class="cta-button"><a href="signup.html" target="_blank">ٍSignup</a></li>
+              </ul>
+  
+              <a href="#" class="burger ml-auto site-menu-toggle js-menu-toggle d-block d-lg-none" data-toggle="collapse" data-target="#main-navbar">
+                <span></span>
+              </a>
+  
+            </div>
+  
+          </div>  
+        </nav> <!-- END nav -->
+  
+      </div> <!-- END container -->
+
+    
+    <div class="container mt-5" style="padding-bottom: 100px;">
+        <form onsubmit="return validatelogin()" style="width: 450px; margin:auto; margin-top: 150px; border: 1px black solid; border-radius: 20px; padding: 20px;">
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" class="form-control" id="name" name="name">
+                <span id="invalidName" class="form-text text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label for="pass1">Password</label>
+                <input type="password" class="form-control" id="pass1" name="pass1">
+                <span id="passError" class="form-text text-danger"></span>
+            </div>
+            <button style="width: 150px;" type="submit" class="btn btn-warning mb-3" value="register" onclick="login()">Login</button>
+        </form>
+        
+    </div>
+
+
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-lg-3">
+            <div class="widget">
+              <h3 class="widget-heading">About Us</h3>
+              <p>Join Us on the Cinematic Journey:<br>
+  
+                Whether you're a seasoned film buff or just beginning your exploration of the cinematic world
+                
+                Lights dimmed, popcorn ready - let's make every movie moment unforgettable!
+                
+                Thank you for being part of the Special Movies family.</p>
+              <p class="mb-0"><a href="#" class="btn btn-primary btn-primary-hover-outline">Learn more</a></p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 pl-lg-5">
+            <div class="widget">
+              <h3 class="widget-heading"></h3>
+      
+              <ul class="list-unstyled float-left">
+                
+  
+  
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 pl-lg-5">
+            <div class="widget">
+              <h3 class="widget-heading">Recent Posts</h3>
+              <ul class="list-unstyled footer-blog-entry">
+                <li>
+                  <span class="d-block date">May 3, 2020</span>
+                  <a href="#">There live the Blind Texts</a>
+                </li>
+                <li>
+                  <span class="d-block date">May 3, 2020</span>
+                  <a href="#">Separated they live in Bookmarksgrove right</a>
+                </li>
+  
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 pl-lg-5">
+            <div class="widget">
+              <h3 class="widget-heading">Connect</h3>
+              <ul class="list-unstyled social-icons light mb-0">
+                <li><a href="#"><span class="icon-facebook"></span></a></li>
+                <li><a href="#"><span class="icon-twitter"></span></a></li>
+                <li><a href="#"><span class="icon-linkedin"></span></a></li>
+                <li><a href="#"><span class="icon-google"></span></a></li>
+                <li><a href="#"><span class="icon-play"></span></a></li>
+              </ul>
+            </div>
+  
+            <div class="widget">
+              <div class="footer-subscribe">
+                <h3 class="widget-heading">Subscribe</h3>
+                <form action="#">
+                  <input type="text" class="form-control" placeholder="Enter your email">
+                  <button type="submit" class="btn btn-link">
+                    <span class="icon-keyboard_backspace"></span>
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+  
+        </div>
+  
+        <div class="row copyright">
+          <div class="col-lg-9 ">
+            <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script>. All Rights Reserved. &mdash; Designed by <a href="https://untree.co">specialmovies</a> License information: https://untree.co/license/
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="../JS/login.js"></script>
+</body>
+</html>
